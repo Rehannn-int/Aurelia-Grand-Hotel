@@ -1,0 +1,125 @@
+.rooms-page-layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0,1fr);
+  gap: 28px;
+  padding: 42px 0 72px;
+}
+
+.filter-panel {
+  background: var(--white);
+  border: 1px solid rgba(230,225,215,0.9);
+  border-radius: 22px;
+  padding: 20px;
+  align-self: start;
+  position: sticky;
+  top: 100px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--forest-green);
+  margin-bottom: 18px;
+}
+
+.filter-block {
+  display: grid;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(230,225,215,0.9);
+  margin-top: 14px;
+}
+
+.filter-block label {
+  font-weight: 600;
+  color: var(--forest-green);
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.5rem 0.8rem;
+  color: var(--forest-green);
+}
+
+.chip.active {
+  background: var(--forest-green);
+  color: var(--white);
+  border-color: var(--forest-green);
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--forest-green);
+}
+
+.checklist {
+  display: grid;
+  gap: 10px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--charcoal);
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.search-summary-panel {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(230,225,215,0.8);
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+}
+
+.sort-box select {
+  border: none;
+  background: transparent;
+  color: var(--forest-green);
+}
+
+.results-meta {
+  margin-bottom: 26px;
+}
+
+.compact-grid {
+  grid-template-columns: repeat(2, minmax(0,1fr));
+}
+
+.empty-state {
+  background: var(--white);
+  border: 1px solid rgba(230,225,215,0.9);
+  border-radius: 22px;
+  padding: 36px 28px;
+  text-align: center;
+}

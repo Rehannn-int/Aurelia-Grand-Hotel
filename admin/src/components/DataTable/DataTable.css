@@ -1,0 +1,12 @@
+.table-card { border: 1px solid var(--line); border-radius: 5px; background: #fff; }
+.table-scroll { overflow-x: auto; }
+.admin-table { width: 100%; border-collapse: collapse; text-align: left; }
+.admin-table th { padding: 12px 15px; border-bottom: 1px solid var(--line); color: #828982; background: #fbfbf9; font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; }
+.admin-table td { padding: 13px 15px; border-bottom: 1px solid #f0f1ee; color: #4c554e; font-size: 11px; vertical-align: middle; }
+.admin-table tr:last-child td { border-bottom: 0; }
+.table-state { padding: 42px 16px !important; color: #899089 !important; text-align: center; }
+.table-pagination { display: flex; align-items: center; justify-content: space-between; padding: 12px 15px; border-top: 1px solid var(--line); color: #7b837c; font-size: 10px; }
+.table-pagination div { display: flex; gap: 5px; }
+.table-pagination button { display: grid; place-items: center; width: 30px; height: 28px; border: 1px solid var(--line); border-radius: 3px; color: var(--forest); background: #fff; cursor: pointer; }
+.table-pagination button:disabled { opacity: .4; cursor: not-allowed; }
+.inline-error { margin: 14px 15px 0; padding: 10px 12px; border: 1px solid #e8caca; color: #8c3434; background: #fff8f7; font-size: 11px; }

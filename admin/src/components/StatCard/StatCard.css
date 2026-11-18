@@ -1,0 +1,5 @@
+.stat-card { min-width: 0; padding: 20px 20px 18px; border: 1px solid var(--line); border-radius: 5px; background: #fff; box-shadow: 0 2px 9px rgba(24,46,35,.025); }
+.stat-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--ink-muted); font-size: 11px; }
+.stat-card>strong { display: block; margin: 15px 0 5px; color: var(--forest); font: 500 28px/1 var(--serif); }
+.stat-card>small { color: #8b928b; font-size: 10px; }
+.stat-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: var(--gold); background: #f6f2e9; }

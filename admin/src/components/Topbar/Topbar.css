@@ -1,0 +1,13 @@
+.admin-topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 92px; padding: 18px 36px; border-bottom: 1px solid var(--line); background: #fff; }
+.topbar-eyebrow { color: #8c938d; font-size: 9px; font-weight: 700; letter-spacing: .16em; }
+.topbar-title h1 { margin: 7px 0 0; color: var(--ink); font: 500 24px/1.1 var(--serif); }
+.topbar-tools { display: flex; align-items: center; gap: 17px; color: #727a74; }
+.system-status { display: flex; align-items: center; gap: 7px; color: #51745f; font-size: 9px; font-weight: 700; letter-spacing: .1em; }
+.system-status i { width: 7px; height: 7px; border-radius: 50%; background: #5c9b70; }
+.system-status.checking { color: #8a7650; }
+.system-status.checking i { background: #c2a764; }
+.system-status.unavailable { color: #984d44; }
+.system-status.unavailable i { background: #b45448; }
+.topbar-date { font-size: 11px; white-space: nowrap; }
+.topbar-search-icon { color: #828a83; }
+@media (max-width: 850px) { .admin-topbar { min-height: 76px; padding: 13px 18px; } .topbar-title h1 { font-size: 20px; } .system-status, .topbar-search-icon { display: none; } }

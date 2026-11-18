@@ -1,0 +1,244 @@
+.hero-section {
+  position: relative;
+  min-height: 760px;
+  display: flex;
+  align-items: center;
+  background: url('../assets/images/hotel/hotel-exterior.jpg') center/cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 19, 17, 0.76), rgba(10, 19, 17, 0.24));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr;
+  align-items: end;
+  gap: 32px;
+  padding: 72px 0;
+}
+
+.hero-copy {
+  max-width: 660px;
+  color: var(--white);
+}
+
+.hero-copy h1,
+.hero-copy p,
+.hero-copy .eyebrow,
+.hero-meta span {
+  color: var(--white);
+}
+
+.hero-copy p {
+  margin-top: 18px;
+  font-size: 1.1rem;
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.hero-meta {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.hero-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+}
+
+.booking-card {
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(230,225,215,0.8);
+  border-radius: 22px;
+  padding: 22px;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+}
+
+.booking-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
+.booking-search {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.section-heading {
+  max-width: 750px;
+  margin-bottom: 36px;
+}
+
+.section-heading.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-heading p {
+  margin-top: 14px;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.experience-grid,
+.testimonial-grid,
+.offer-grid,
+.feature-columns,
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.experience-card,
+.testimonial-card,
+.offer-card,
+.feature-box,
+.contact-card {
+  background: var(--white);
+  border: 1px solid rgba(230,225,215,0.9);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.experience-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.experience-card div {
+  padding: 18px 18px 20px;
+}
+
+.split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.image-panel img {
+  border-radius: 22px;
+  height: 520px;
+  object-fit: cover;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 26px;
+  display: grid;
+  gap: 12px;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 22px;
+  color: rgba(37,40,35,0.8);
+}
+
+.feature-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 18px;
+}
+
+.gallery-grid img {
+  height: 270px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.testimonial-card {
+  padding: 22px 18px;
+}
+
+.stars {
+  color: var(--gold);
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+
+.offer-card {
+  padding: 22px 20px;
+}
+
+.offer-tag {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(197,165,114,0.12);
+  color: var(--forest-green);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
+.location-box {
+  background: var(--white);
+  border: 1px solid rgba(230,225,215,0.9);
+  border-radius: 24px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 26px;
+  align-items: center;
+}
+
+.location-details {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 26px;
+  display: grid;
+  gap: 10px;
+}
+
+.map-placeholder {
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(23,61,50,0.12), rgba(197,165,114,0.18));
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  color: var(--forest-green);
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}

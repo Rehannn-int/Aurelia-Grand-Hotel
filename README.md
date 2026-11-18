@@ -1,45 +1,120 @@
-# AURELIA GRAND Hotel Management System
+# 🏨 Aurelia Grand Hotel — Management & Booking System
 
-The project contains two independent React applications that share the existing Express/Mongoose API:
+A modern luxury hotel booking and management platform featuring an elegant user interface, interactive room listings, reservation management, and a dedicated administration dashboard.
 
-- `frontend/` — customer website, Vite development server on port 5173.
-- `admin/` — separate hotel administration app, Vite development server on port 5174.
-- `backend/` — shared Express API, port 4000 by default.
+Built with React, Node.js, Express, and MongoDB, Aurelia Grand Hotel provides separate experiences for hotel guests and administrators.
 
-## Windows PowerShell
+## Project Architecture
 
-PowerShell may resolve `npm` to `npm.ps1` and block it under the current script execution policy. Use `npm.cmd` without weakening PowerShell security settings.
+The project contains three independent components:
 
-Run each app in its own terminal:
+- `frontend/` — Customer-facing hotel website built with React and Vite.
+- `admin/` — Separate hotel administration application built with React and Vite.
+- `backend/` — Shared Express.js API with MongoDB and Mongoose.
 
-```powershell
-Set-Location "D:\hotel\backend"
-& "C:\Program Files\nodejs\npm.cmd" run dev
+## Tech Stack
+
+- **Frontend:** React, Vite, CSS
+- **Admin Panel:** React, Vite
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, Mongoose
+- **API:** REST API
+
+## Features
+
+### Customer Website
+- Modern luxury hotel design
+- Room browsing and room categories
+- Booking search and reservation workflow
+- Room details and amenities
+- Guest registration and authentication
+- Responsive user interface
+
+### Administration Dashboard
+- Separate administrator login
+- Dashboard and management interface
+- Reservation management
+- Room management
+- Guest management
+- Staff and services management
+- Payments and reports
+
+### Backend
+- Shared API for frontend and administration
+- Authentication and authorization
+- Booking and room management
+- Database integration
+- Validation and error handling
+
+## Project Structure
+
+```text
+Aurelia-Grand-Hotel/
+├── admin/
+├── backend/
+├── frontend/
+├── README.md
+├── package.json
+└── package-lock.json
 ```
 
-```powershell
-Set-Location "D:\hotel\frontend"
-& "C:\Program Files\nodejs\npm.cmd" run dev
-```
+## Local Development
+
+Each application runs independently. Start each in its own terminal.
+
+### Backend
 
 ```powershell
-Set-Location "D:\hotel\admin"
-& "C:\Program Files\nodejs\npm.cmd" run dev
+cd backend
+npm install
+npm run dev
 ```
 
-Install dependencies within each project when needed:
+Default backend port: `4000`
+
+### Customer Frontend
 
 ```powershell
-Set-Location "D:\hotel\frontend"
-& "C:\Program Files\nodejs\npm.cmd" install
-Set-Location "D:\hotel\admin"
-& "C:\Program Files\nodejs\npm.cmd" install
-Set-Location "D:\hotel\backend"
-& "C:\Program Files\nodejs\npm.cmd" install
+cd frontend
+npm install
+npm run dev
 ```
 
-The admin app uses `VITE_API_URL` from `admin/.env`; copy `admin/.env.example` to `.env` if you need to override the API URL. The backend CORS allowlist uses `CLIENT_URL` for the customer origin and `ADMIN_CLIENT_URL` for the administration origin. Browser applications must not contain server secrets.
+Default Vite port: `5173`
 
-Administrator login is separate at the admin app's `/login` route. Admin accounts are provisioned using the backend's protected setup workflow; public customer registration cannot create admin roles. Admin access and permissions are also enforced by the backend.
+### Admin Application
 
-See [backend/README.md](./backend/README.md) for API, database, environment, and test setup.
+```powershell
+cd admin
+npm install
+npm run dev
+```
+
+Default Vite port: `5174`
+
+## Environment Configuration
+
+Create local environment files using the provided `.env.example` files.
+
+- Backend configuration includes database and server settings.
+- Frontend configuration includes API connection settings.
+- Admin configuration includes API connection settings.
+
+Do not commit passwords, API keys, database credentials, or other secrets.
+
+## Security
+
+- Administrator access is separate from customer authentication.
+- Admin roles cannot be created through public customer registration.
+- Administrative permissions are enforced by the backend.
+- Server secrets must not be exposed in browser applications.
+
+## Documentation
+
+For backend API, database, environment setup, and testing information, refer to:
+
+[`backend/README.md`](./backend/README.md)
+
+---
+
+*A premium hospitality experience powered by modern web technology.*
